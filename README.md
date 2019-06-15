@@ -1,5 +1,8 @@
 # Foodlensemvp
 
+to work on exactly same dependencies please us
+
+    npm ci
 
 ## Angular Stuff
 

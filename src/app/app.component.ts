@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StitchService } from './services/stitch.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'foodlensemvp';
+
+  constructor(private stitch: StitchService) {
+    this.stitch.init();
+  }
 }

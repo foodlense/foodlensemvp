@@ -12,10 +12,16 @@ export class StitchService {
   private client = Stitch.initializeDefaultAppClient('foodlense-api-ctyle');
 
   constructor() {
-    console.log('stitch constructor');
+    this.loginAnonymously();
+    console.log('stitch constructor', this.client);
   }
 
-  public init() {
+  private loginAnonymously() {
     this.client.auth.loginWithCredential(new AnonymousCredential());
   }
+
+  public loginWithCredentials() {
+
+  }
+
 }

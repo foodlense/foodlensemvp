@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'foodlensemvp';
 
   constructor(private stitch: StitchService) {
-    this.stitch.init();
+    // this.stitch.init();
   }
+
 }
